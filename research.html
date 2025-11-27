@@ -8,21 +8,27 @@
 <body>
 
     <nav>
- <ul>
-    <li><a href="index.html>Home</a></li>
-    <li><a href="research.html" class="active">Research</a></li> <li><a href="skills.html">Toolkit</a></li>
-    <li><a href="about.html">Experience</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
-    <nav>
+        <a href="index.html" class="logo">LN.</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html" class="active">Research</a></li>
+            <li><a href="skills.html">Toolkit</a></li>
+            <li><a href="about.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
-        <h1>Research Outcomes</h1>
-        <p>My doctoral research developed a comprehensive framework to bridge the gap between technical accessibility and social acceptability.</p>
+        <header style="padding: 40px 0 60px 0; text-align: center;">
+            <h1>Research Outcomes</h1>
+            <p class="subtitle">
+                My doctoral research developed a comprehensive framework to bridge the gap between technical accessibility and social acceptability.
+            </p>
+        </header>
 
         <section>
             <h2>01. Stigma-Mitigating Design Framework</h2>
-            <img src="research framework.jpg" alt="Design Framework" style="width: 100%; border-radius: 8px; margin: 20px 0; border: 1px solid #eee;">
+            <img src="framework.png" alt="Design Framework" style="width: 100%; border-radius: 8px; margin: 20px 0; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
             <p>
                 This framework identifies three core mechanisms of stigma: <strong>Visibility Anxiety</strong>, <strong>Incompetence Shame</strong>, and <strong>Dependency Labels</strong>. 
                 It provides a closed-loop methodology for designers to intervene at the technical, social, and psychological levels.
@@ -31,46 +37,76 @@
 
         <section>
             <h2>02. The 6 Actionable Guidelines</h2>
-            <p style="margin-bottom: 30px;">A toolkit validated by industry experts to help designers create stigma-free assistive experiences.</p>
+            <p style="margin-bottom: 30px; color: #666;">A toolkit validated by industry experts to help designers create stigma-free assistive experiences.</p>
             
-            <div class="card">
-                <div class="card-title">🎨 Customizable Identification</div>
-                <p><strong>Problem:</strong> Unwanted public disclosures expose disability.<br>
-                <strong>Solution:</strong> Allows users to filter secondary targets and customize feedback tone to maintain privacy.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div class="card">
+                    <div class="card-title">🎨 Customizable Identification</div>
+                    <p>Allows users to filter secondary targets and customize feedback tone to prevent unwanted public disclosure.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">🤫 Stealth Mode</div>
+                    <p>One-tap switch to dark UI, haptic-only feedback, and disabled flash to blend in during high-pressure moments.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">⚡️ Streamlined Input</div>
+                    <p>Uses gesture shortcuts and context prompts to reduce operation time and avoid "incompetence shame".</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">🤝 Volunteer Profiles</div>
+                    <p>Displays helper skills and allows instant switching, reframing help as a user-controlled service.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">🎓 Communication Training</div>
+                    <p>Private micro-scenarios with guided scripts to build self-efficacy before public use.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">💬 In-App Community</div>
+                    <p>Peer-led themed rooms for experience sharing, normalizing assistive use through peer validation.</p>
+                </div>
+            </div>
+        </section>
+
+ <section>
+            <h2>03. Strategic Analysis Matrices</h2>
+            <p style="margin-bottom: 30px;">
+                To operationalize the guidelines, I developed two strategic matrices to guide designers through different stages of the decision-making process.
+            </p>
+            
+            <div style="margin-bottom: 60px;">
+                <h3 style="font-size: 1.4rem; color: #2d3436; margin-bottom: 10px;">Matrix A: Scene-Guideline Fit</h3>
+                <p style="font-size: 0.95rem; color: #666; margin-bottom: 20px;">
+                    This matrix maps the 6 guidelines against 8 common daily scenarios, identifying which interventions are most effective in specific contexts.
+                </p>
+                
+                <img src="matrix 1.jpeg" alt="Scene-Guideline Fit Matrix" style="width: 100%; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                
+                <div class="card" style="margin-top: 20px; border-left: 4px solid #0984e3; padding: 15px 20px;">
+                    <strong>💡 Key Insight:</strong> "Stealth Mode" is the priority for high-visibility public spaces (e.g., Train Stations), whereas "Communication Training" is best suited for private, low-pressure environments (e.g., Kitchens).
+                </div>
             </div>
 
-            <div class="card">
-                <div class="card-title">🤫 Stealth Mode</div>
-                <p><strong>Problem:</strong> Public visibility anxiety in high-pressure environments.<br>
-                <strong>Solution:</strong> One-tap switch to dark UI, haptic-only feedback, and disabled flash to blend in.</p>
+            <div>
+                <h3 style="font-size: 1.4rem; color: #2d3436; margin-bottom: 10px;">Matrix B: Stigma Mechanism Mapping</h3>
+                <p style="font-size: 0.95rem; color: #666; margin-bottom: 20px;">
+                    This visualizes how each design decision directly impacts the three core mechanisms of stigma: Visibility, Competence, and Dependency.
+                </p>
+                
+                <img src="matrix 2.jpeg" alt="Stigma Mechanism Mapping" style="width: 100%; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                
+                <div class="card" style="margin-top: 20px; border-left: 4px solid #6c5ce7; padding: 15px 20px;">
+                    <strong>💡 Strategic Value:</strong> By using this mapping, designers can ensure their features don't just "solve a problem" but actively "reduce social pressure."
+                </div>
             </div>
 
-            <div class="card">
-                <div class="card-title">⚡️ Streamlined Input</div>
-                <p><strong>Problem:</strong> Prolonged interactions trigger "incompetence shame".<br>
-                <strong>Solution:</strong> Uses gesture shortcuts, context prompts, and shorter flows to reduce operation time.</p>
-            </div>
-
-            <div class="card">
-                <div class="card-title">🤝 Volunteer Profiles & Instant Swap</div>
-                <p><strong>Problem:</strong> Passive help-seeking reinforces "dependency labels".<br>
-                <strong>Solution:</strong> Displays helper skills and allows instant switching, reframing help as a user-controlled service.</p>
-            </div>
-
-            <div class="card">
-                <div class="card-title">🎓 Communication Training</div>
-                <p><strong>Problem:</strong> Fear of appearing clumsy in public.<br>
-                <strong>Solution:</strong> Private micro-scenarios with guided scripts to build self-efficacy before public use.</p>
-            </div>
-
-            <div class="card">
-                <div class="card-title">💬 In-App Community</div>
-                <p><strong>Problem:</strong> Isolation and internalised stigma.<br>
-                <strong>Solution:</strong> Peer-led themed rooms for experience sharing, normalizing assistive use through peer validation.</p>
-            </div>
         </section>
     </div>
 
-    <footer>&copy; 2024 Lizhou Niu</footer>
+    <footer>&copy; 2024 Lizhou Niu. Designed with Inclusive Principles.</footer>
 </body>
 </html>
